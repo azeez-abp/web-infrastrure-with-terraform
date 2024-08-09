@@ -12,3 +12,4 @@
 .example.auto.tfvars
 *.tfplan*
 *.tfplan
+*.terraform/
