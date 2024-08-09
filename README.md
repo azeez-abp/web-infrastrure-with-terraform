@@ -5,19 +5,19 @@
 This repository contains the infrastructure provisioning for a web infrastructure stack using Azure. The goal is to provision a complete web infrastructure setup on Azure, including virtual networks, subnets, network security groups, virtual machines, load balancers, application gateways, and an Azure SQL database.
 
 ## Deployent
-### clone the project 
+### Clone the project 
 ```
 git clone  https://github.com/azeez-abp/web-infrastrure-with-terraform.git
 ```
 
-###  change into web_infra directory
+###  Change into web_infra directory
 ```bash
 cd web_infra
 ```
 ### Modify main.tf file
 - Open main.tf and file locals block, update the variable to your desire value or leave the default values
 
-### create .example.auto.tfvars file
+### Create .example.auto.tfvars file
 - Create .example.auto.tfvars file and add the following to the file
 
 ```hcl
