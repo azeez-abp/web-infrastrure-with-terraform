@@ -1,0 +1,14 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+*.terrform*
+
+
+# Ignore any other state files (add more if needed)
+*state*
+
+
+*exe*
+.example.auto.tfvars
+*.tfplan*
+*.tfplan
