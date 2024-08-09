@@ -2,10 +2,6 @@ output "subnet_ids" {
   value = { for s in azurerm_subnet.zn_web_infra_subnets : s.name => s.id }
 }
 
-output "data" {
-  value = data.azurerm_client_config.user
-}
-
 output "web_vm_ips" {
   value = [for vm in azurerm_virtual_machine.web : vm.name]
 }
