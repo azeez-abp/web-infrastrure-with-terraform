@@ -1,4 +1,4 @@
-# This file provisionn the backup for vms
+# This file provision the backup for vms
 
 resource "azurerm_recovery_services_vault" "zn_web_infra_backeup" {
   name                = "${var.zn_web_infra_backeup.name}-vault"
