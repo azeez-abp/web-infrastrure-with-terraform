@@ -13,3 +13,4 @@
 *.tfplan*
 *.tfplan
 *.terraform/
+.terraform.tfstate.lock.info

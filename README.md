@@ -46,3 +46,11 @@ terraform init
 terraform plan -var-file='.example.auto.tfvars' -out='resource.tfplan'
 terraform apply resource.tfplan
 ```
+
+
+# Architecture hit
+```
+ NSG --> NSG --> ASSOC <-- Subnet --> NIC --> VM <-- Avalability set
+ web vm --> loadbalncer
+ web vm --> application gateway
+``` 
