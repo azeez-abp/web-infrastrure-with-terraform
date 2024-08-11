@@ -48,10 +48,13 @@ terraform apply resource.tfplan
 ```
 
 
-# Architecture hit
+# Architecture hint
 ```
  NSG --> NSG --> ASSOC <-- Subnet --> NIC --> VM <-- Avalability set
  web vm --> loadbalncer
  web vm --> application gateway
  sql server --> sql database
 ``` 
+
+## Cost Estimate Per Month
+![cost](cost-estimate.png)
