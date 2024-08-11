@@ -53,4 +53,5 @@ terraform apply resource.tfplan
  NSG --> NSG --> ASSOC <-- Subnet --> NIC --> VM <-- Avalability set
  web vm --> loadbalncer
  web vm --> application gateway
+ sql server --> sql database
 ``` 
