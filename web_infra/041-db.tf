@@ -1,14 +1,3 @@
-data "azurerm_key_vault_secret" "sql_admin_password" {
-  name         = "sql-admin-password"
-  key_vault_id = azurerm_key_vault.zn_web_infra_keyvault.id
-}
-
-data "azurerm_key_vault_secret" "sql_admin_login" {
-  name         = "sql-admin-login"
-  key_vault_id = azurerm_key_vault.zn_web_infra_keyvault.id
-}
-
-
 resource "azurerm_mssql_server" "zn_web_infra_sql_server" {
   name                         = "${var.sql_name}server"
   resource_group_name          = var.resource_group_name
