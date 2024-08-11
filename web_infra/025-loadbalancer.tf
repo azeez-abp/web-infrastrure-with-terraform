@@ -14,7 +14,7 @@ resource "azurerm_lb" "zn_web_infra_lb" {
 resource "azurerm_lb_backend_address_pool" "loadbalance_addr" {
   loadbalancer_id = azurerm_lb.zn_web_infra_lb.id
   name            = "backendPool"
-  # Ensure loadbalancer and availability set are created be this
+  # Ensure loadbalancer and availability set are created before this
   depends_on = [azurerm_lb.zn_web_infra_lb, azurerm_availability_set.web]
 }
 
@@ -30,9 +30,9 @@ resource "azurerm_lb_probe" "lb_probe" {
   name                = "lbProbe"
   loadbalancer_id     = azurerm_lb.zn_web_infra_lb.id
   port                = 80
-  protocol            = "Tcp" # Added protocol as it is required
-  interval_in_seconds = 15    # Example value, adjust as needed
-  number_of_probes    = 2     # Example value, adjust as needed
+  protocol            = "Tcp"
+  interval_in_seconds = 15
+  number_of_probes    = 2
 }
 
 

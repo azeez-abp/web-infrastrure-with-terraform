@@ -140,8 +140,8 @@ variable "vm_db_login_credentials" {
   type = object({
     user1 = string
     pass1 = string
-    user = string
-    pass = string
+    user  = string
+    pass  = string
   })
 
   sensitive = true
