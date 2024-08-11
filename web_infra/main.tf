@@ -1,12 +1,12 @@
 terraform {
   required_version = ">=0.12"
-  #comment out to bootstrap the project with remote backend
-  #     backend "azurerm" {
-  #     resource_group_name  = var.resource_group_name      # The resource group where the storage account is located
-  #     storage_account_name = var.storage_acc_name        # The name of the storage account
-  #     container_name       = var.storage_acc_container_name # The name of the container
-  #     key                  = "terraform.tfstate"          # The name of the state file within the container
-  #   }
+  #comment out to switch  the project to remote backend and save log 
+    #   backend "azurerm" {
+    #   resource_group_name  = var.resource_group_name      # The resource group where the storage account is located
+    #   storage_account_name = var.storage_acc_name        # The name of the storage account
+    #   container_name       = var.storage_acc_container_name # The name of the container
+    #   key                  = "terraform.tfstate"          # The name of the state file within the container
+    # }
 
   backend "local" {
     path = "terraform.tfstate"
